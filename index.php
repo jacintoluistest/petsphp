@@ -7,7 +7,7 @@ $result = $conn->query($sql);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pet List</title>
+    <title>Pet List from Jenkins</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
