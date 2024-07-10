@@ -11,7 +11,7 @@ $result = $conn->query($sql);
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Pet List</h1>
+    <h1>Pet List from Jenkins</h1>
     <a href="create.php">Add New Pet</a>
     <table border="1">
         <tr>
