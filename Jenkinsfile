@@ -8,7 +8,7 @@ pipeline{
             }
         }
 
-        stage('Deploy')
+        stage('Deploy'){
             steps{
                 echo 'Deploying'
                 // Example: Copy files to server directory
