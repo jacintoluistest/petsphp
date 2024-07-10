@@ -8,12 +8,19 @@ pipeline{
             }
         }
 
+        stage('Build'){
+            'echo Building...'
+        }
+
         stage('Deploy'){
             steps{
                 echo 'Deploying'
-                // Example: Copy files to server directory
-                cp 'rsync -avz --exclude=".git" ./Users/ljacinto/.jenkins/workspace/* ljacinto@localhost:/Applications/XAMPP/htdocs/pet_crud_app'
-                // Replace `user@server:/path/to/server/directory` with your server details
+                script{
+                    def sourceDir="${env.WORKSPACE}"
+                    def desDir="/Applications/XAMPP/htdocs/pet_crud_app"
+
+                    sh "cp -r ${sourceDir}/* ${desDir}/"
+                }
 
             }
     }
