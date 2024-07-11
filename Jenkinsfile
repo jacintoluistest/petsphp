@@ -7,12 +7,14 @@ pipeline{
     stages {
         stage('Checkout Pet App'){
             steps{
+                echo 'Getting Pet App'
                 git branch: 'main', url: 'https://github.com/jacintoluistest/petsphp.git'
             }
         }
 
         stage ('Checkout Pet Tests'){
             steps{
+                echo 'Getting Pet App Tests'
                 git branch: 'main', url:'https://github.com/jacintoluistest/petsTests.git'
             }
         }
