@@ -1,8 +1,8 @@
 pipeline{
     agent any
-    environment{
-        MAVEN_HOME = tool name: 'Maven', type:'maven'
-    }
+   // environment{
+    //    MAVEN_HOME = tool name: 'Maven', type:'maven'
+    //}
 
     stages {
         stage('Checkout Pet App'){
