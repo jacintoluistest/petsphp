@@ -16,7 +16,7 @@ pipeline{
                     
                     // Write the build number to a file
                     def buildNumberFile = "${env.WORKSPACE}/build_number.txt"
-                    writeFile file: buildNumberFile, text: "${env.BUILD_NUMBER}"
+                    writeFile file: buildNumberFile, text: "1.0.${env.BUILD_NUMBER}.release"
                 }
             }
         }
