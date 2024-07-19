@@ -23,7 +23,7 @@ if (file_exists($buildNumberFile)) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Pet List from Jenkins cambio Luis Jacinto</h1>
+    <h1>Pet List from Jenkins with about version</h1>
     <a href="create.php">Add New Pet</a>
 
     <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
@@ -41,7 +41,7 @@ if (file_exists($buildNumberFile)) {
         </div>
         <div class="modal-body">
           <p>Sistema de Catálogo de Mascotas</p>
-          <p>Version<?php echo htmlspecialchars($buildNumber); ?></p>
+          <p>Version:   <?php echo htmlspecialchars($buildNumber); ?></p>
           <p></p>
         </div>
         <div class="modal-footer">
