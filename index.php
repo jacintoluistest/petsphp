@@ -18,14 +18,17 @@ if (file_exists($buildNumberFile)) {
 <head>
     <title>Pet List from Jenkins</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <h1>Pet List from Jenkins cambio Luis Jacinto</h1>
     <a href="create.php">Add New Pet</a>
 
-    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#modalForm">
-    Open Contact Form
-</button>
+    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+        Acerca de:
+    </button>
 
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
