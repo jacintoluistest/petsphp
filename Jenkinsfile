@@ -10,6 +10,17 @@ pipeline{
             }
         }
 
+        stage('Write Build Number'){
+            steps{
+                script{
+                    
+                    // Write the build number to a file
+                    def buildNumberFile = "${env.WORKSPACE}/build_number.txt"
+                    writeFile file: buildNumberFile, text: "${env.BUILD_NUMBER}"
+                }
+            }
+        }
+
         
         stage('Deploy'){
             steps{
